@@ -27,7 +27,6 @@ El objetivo es especializar el modelo para responder preguntas sobre el universo
 - [📂 Dataset](#-dataset)
 - [🤖 Modelo Fine-Tuned](#-modelo-fine-tuned)
 - [🚀 Demo (Hugging Face Space)](#-demo-hugging-face-space)
-- [👨‍💻 Autor](#-autor)
 
 ---
 
