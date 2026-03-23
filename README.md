@@ -1,4 +1,9 @@
 # 🎮 The Last of Us QA – Fine-Tuning with QLoRA
+[![Hugging Face Model](https://img.shields.io/badge/🤗%20Model-TheLastOfUs--QA-blue)](https://huggingface.co/adriangg04/TheLastOfUs-QA)
+[![Hugging Face Dataset](https://img.shields.io/badge/🤗%20Dataset-The%20Last%20of%20Us-yellow)](https://huggingface.co/datasets/adriangg04/the-last-of-us-instruction-dataset)
+[![Hugging Face Space](https://img.shields.io/badge/🤗%20Demo-Space-green)](https://huggingface.co/spaces/adriangg04/Qwen-Finetuned-TheLastofUs)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![Transformers](https://img.shields.io/badge/🤗%20Transformers-LLM-orange)](https://huggingface.co/docs/transformers/index)
 
 Este proyecto implementa un pipeline completo de **Fine-Tuning de un modelo de lenguaje** usando **QLoRA (4-bit quantization + LoRA)** sobre el modelo base:
 
@@ -19,6 +24,10 @@ El objetivo es especializar el modelo para responder preguntas sobre el universo
 - [📁 Estructura del proyecto](#-estructura-del-proyecto)
 - [🚀 Cómo usar](#-cómo-usar)
 - [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
+- [📂 Dataset](#-dataset)
+- [🤖 Modelo Fine-Tuned](#-modelo-fine-tuned)
+- [🚀 Demo (Hugging Face Space)](#-demo-hugging-face-space)
+- [👨‍💻 Autor](#-autor)
 
 ---
 
@@ -188,6 +197,36 @@ python Test_FineTuning_Model.py
 - BitsAndBytes  
 - PyTorch  
 - TensorBoard  
+
+---
+
+## 📂 Dataset
+
+El dataset utilizado para el Fine-Tuning está disponible en Hugging Face:
+
+👉 https://huggingface.co/datasets/adriangg04/the-last-of-us-instruction-dataset
+
+Este dataset ha sido creado específicamente para este proyecto y contiene ejemplos en formato conversacional (system, user, assistant) centrados en el universo de *The Last of Us*.
+
+---
+
+## 🤖 Modelo Fine-Tuned
+
+El modelo ajustado está disponible en Hugging Face:
+
+👉 https://huggingface.co/adriangg04/TheLastOfUs-QA
+
+Este modelo es una versión fine-tuned de Qwen2.5-7B-Instruct, optimizada para responder preguntas sobre *The Last of Us*.
+
+---
+
+## 🚀 Demo (Hugging Face Space)
+
+Puedes probar el modelo directamente desde el siguiente Space:
+
+👉 https://huggingface.co/spaces/adriangg04/Qwen-Finetuned-TheLastofUs
+
+Este Space permite interactuar con el modelo en tiempo real sin necesidad de instalación local.
 
 ---
 
