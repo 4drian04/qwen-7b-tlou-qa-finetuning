@@ -145,6 +145,18 @@ Se ejecuta la misma batería de tests sobre el modelo ajustado:
 
 ## 📁 Estructura del proyecto
 
+```
+├── Test_Modelo_Base.py
+├── Fine-Tuning.py
+├── Merge_Models.py
+├── Test_FineTuning_Model.py
+├── tlou_dataset.json
+├── Upload_Dataset_To_HuggingFace.py
+├── Upload_Model_To_HuggingFace.py
+├── Memoria_Tecnica_Fine_Tuning_TLOU.pdf
+└── README.md
+
+```
 
 ---
 
