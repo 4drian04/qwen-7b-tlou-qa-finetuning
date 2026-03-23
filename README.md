@@ -19,7 +19,6 @@ El objetivo es especializar el modelo para responder preguntas sobre el universo
 - [📁 Estructura del proyecto](#-estructura-del-proyecto)
 - [🚀 Cómo usar](#-cómo-usar)
 - [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
-- [📌 Mejoras futuras](#-mejoras-futuras)
 
 ---
 
