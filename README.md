@@ -16,18 +16,18 @@ The goal is to specialize the model to answer questions about the universe of **
 
 # 📌 Table of Contents
 
-- [📖 Description](#-description)
-- [⚙️ Project Pipeline](#-project-pipeline)
-- [🧪 Model Evaluation](#-model-evaluation)
-- [🧠 Fine-Tuning (QLoRA)](#-fine-tuning-qlora)
-- [🔀 Model Merge](#-model-merge)
-- [📊 Results](#-results)
-- [📁 Project Structure](#-project-structure)
-- [🚀 How to Use](#-how-to-use)
-- [🛠️ Technologies Used](#-technologies-used)
-- [📂 Dataset](#-dataset)
-- [🤖 Model Fine-Tuned](#-model-fine-tuned)
-- [🚀 Demo (Hugging Face Space)](#-demo-hugging-face-space)
+- [📖 Description](#description)
+- [⚙️ Project Pipeline](#project-pipeline)
+- [🧪 Model Evaluation](#model-evaluation)
+- [🧠 Fine-Tuning (QLoRA)](#fine-tuning-qlora)
+- [🔀 Model Merge](#model-merge)
+- [📊 Results](#results)
+- [📁 Project Structure](#project-structure)
+- [🚀 How to Use](#how-to-use)
+- [🛠️ Technologies Used](#technologies-used)
+- [📂 Dataset](#dataset)
+- [🤖 Fine-Tuned Model](#fine-tuned-model)
+- [🚀 Demo (Hugging Face Space)](#demo-hugging-face-space)
 
 ---
 
