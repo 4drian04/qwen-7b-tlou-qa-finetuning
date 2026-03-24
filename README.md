@@ -5,145 +5,154 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Transformers](https://img.shields.io/badge/🤗%20Transformers-LLM-orange)](https://huggingface.co/docs/transformers/index)
 
-Este proyecto implementa un pipeline completo de **Fine-Tuning de un modelo de lenguaje** usando **QLoRA (4-bit quantization + LoRA)** sobre el modelo base:
+This project implements a complete **fine-tuning pipeline for a language model** using **QLoRA (4-bit quantization + LoRA)** on the base model:
 
 👉 `Qwen/Qwen2.5-7B-Instruct`
 
-El objetivo es especializar el modelo para responder preguntas sobre el universo de **The Last of Us**, evaluando su rendimiento **antes y después del entrenamiento**.
+The goal is to specialize the model to answer questions about the universe of **The Last of Us**, evaluating its performance **before and after training**.
+
 
 ---
 
-# 📌 Tabla de contenidos
+# 📌 Table of Contents
 
-- [📖 Descripción](#-descripción)
-- [⚙️ Pipeline del proyecto](#️-pipeline-del-proyecto)
-- [🧪 Evaluación del modelo](#-evaluación-del-modelo)
+- [📖 Description](#-description)
+- [⚙️ Project Pipeline](#-project-pipeline)
+- [🧪 Model Evaluation](#-model-evaluation)
 - [🧠 Fine-Tuning (QLoRA)](#-fine-tuning-qlora)
-- [🔀 Merge del modelo](#-merge-del-modelo)
-- [📊 Resultados](#-resultados)
-- [📁 Estructura del proyecto](#-estructura-del-proyecto)
-- [🚀 Cómo usar](#-cómo-usar)
-- [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
+- [🔀 Model Merge](#-model-merge)
+- [📊 Results](#-results)
+- [📁 Project Structure](#-project-structure)
+- [🚀 How to Use](#-how-to-use)
+- [🛠️ Technologies Used](#-technologies-used)
 - [📂 Dataset](#-dataset)
-- [🤖 Modelo Fine-Tuned](#-modelo-fine-tuned)
+- [🤖 Model Fine-Tuned](#-model-fine-tuned)
 - [🚀 Demo (Hugging Face Space)](#-demo-hugging-face-space)
 
 ---
 
-# 📖 Descripción
+# 📖 Description
 
-Este repositorio muestra un flujo completo de trabajo en Fine-Tuning:
+This repository shows a complete Fine-Tuning workflow:
 
-1. Evaluación del modelo base  
-2. Entrenamiento con dataset específico  
-3. Integración de adaptadores LoRA  
-4. Merge del modelo final  
-5. Re-evaluación con los mismos tests  
+1. Baseline model evaluation
+2. Training with a specific dataset
+3. Integration of LoRA adapters
+4. Merging the final model
+5. Re-evaluation with the same tests
 
-El dataset utilizado ha sido creado específicamente para este proyecto y contiene instrucciones en formato conversacional sobre *The Last of Us*.
-
----
-
-# ⚙️ Pipeline del proyecto
-
-Modelo base → Evaluación inicial → Fine-Tuning (QLoRA) → Merge → Evaluación final → Comparación
+The dataset used was created specifically for this project and contains conversational instructions about *The Last of Us*.
 
 
 ---
 
-# 🧪 Evaluación del modelo
+# ⚙️ Project Pipeline
 
-Antes del Fine-Tuning, se ejecuta una batería de 15 preguntas sobre el universo de *The Last of Us*.
+Baseline Model → Initial Evaluation → Fine-Tuning (QLoRA) → Merge → Final Evaluation → Comparison
 
-### Características:
+---
 
-- Prompts en formato conversación (system + user)  
-- Generación con `transformers.pipeline`  
-- Resultados guardados en JSON  
+# 🧪 Model Evaluation
 
-### Ejemplo:
+Before fine-tuning, a battery of 15 questions about the universe of *The Last of Us* is run.
+
+### Features:
+
+- Prompts in conversational format (system + user)
+- Generation with `transformers.pipeline`
+- Results saved in JSON
+
+### Example:
 
 ```python
 messages = [
-    {"role": "system", "content": "You are an expert on The Last of Us"},
-    {"role": "user", "content": prompt}
+{"role": "system", "content": "You are an expert on The Last of Us"},
+{"role": "user", "content": prompt}
 ]
 ```
 
 ## 🧠 Fine-Tuning (QLoRA)
 
-Se aplica Fine-Tuning eficiente usando:
+Efficient fine-tuning is applied using:
 
-- Cuantización en 4 bits (NF4)
+- 4-bit quantization (NF4)
 - LoRA (Low-Rank Adaptation)
 
-### 🔧 Configuración LoRA
+### 🔧 LoRA Configuration
 
 ```python
+
 r = 16
 lora_alpha = 32
 lora_dropout = 0.05
 ```
 
-### 🎯 Capas adaptadas
+### 🎯 Layers Adapted
 
 ```python
 ["q_proj", "k_proj", "v_proj", "o_proj",
- "gate_proj", "up_proj", "down_proj"]
+"gate_proj", "up_proj", "down_proj"]
 ```
 
-### ⚡ Características clave
+### ⚡ Key Features
 
-- Uso de bitsandbytes para reducir memoria
-- gradient_accumulation para simular batches grandes
+- Use of bits and bytes to reduce memory
+- gradient_accumulation to simulate large batches
 - Scheduler: cosine
-- Logging con TensorBoard
+- Logging with TensorBoard
 
 ---
 
-## 🔀 Merge del modelo
+## 🔀 Model Merge
 
-Tras el entrenamiento, se realiza:
+After training, the following is performed:
 
 ```python
 model.merge_and_unload()
 ```
 
-## 🔧 Esto permite
+## 🔧 This allows:
 
-- Integrar los adaptadores LoRA en el modelo base  
-- Usar el modelo final sin dependencias de PEFT  
-- Simplificar la inferencia  
-
----
-
-## 🧪 Evaluación final
-
-Se ejecuta la misma batería de tests sobre el modelo ajustado:
-
-- Mismo conjunto de preguntas  
-- Misma configuración de generación  
-- Resultados guardados en JSON  
+- Integrating LoRA adapters into the base model
+- Using the final model without PEFT dependencies
+- Simplifying inference
 
 ---
 
-## 📊 Resultados
+## 🧪 Final Evaluation
 
-| Modelo             | Aciertos | Precisión |
+The same test suite is run on the adjusted model:
+
+- Same Question set
+- Same generation configuration
+- Results saved in JSON
+
+---
+
+## 📊 Results
+
+| Model | Correct Answers | Accuracy |
+
 |--------------------|----------|----------|
-| Base model         | 5 / 15   | 33.3%    |
-| Fine-Tuned model   | 13 / 15  | 86.7%    |
+
+| Base model | 5 / 15 | 33.3% |
+
+| Fine-Tuned model | 13 / 15 | 86.7% |
+
 
 ---
 
-## 📈 Mejoras observadas
+## 📈 Observed Improvements
 
-- Reducción significativa de alucinaciones  
-- Respuestas más precisas  
-- Mejor comprensión del contexto narrativo  
-- Mayor consistencia en respuestas  
+- Significant reduction in hallucinations
 
-## 📁 Estructura del proyecto
+- More accurate responses
+
+- Better understanding of the narrative context
+
+- Greater consistency in responses
+
+## 📁 Project Structure
 
 ```
 ├── Test_Modelo_Base.py
@@ -160,100 +169,100 @@ Se ejecuta la misma batería de tests sobre el modelo ajustado:
 
 ---
 
-## 🚀 Cómo usar
+## 🚀 How to Use
 
-1. Clonar repositorio
+1. Clone repository
 
 ```bash
-git clone https://github.com/tu-usuario/https://github.com/4drian04/tlou-qa-finetuning.git
+git clone https://github.com/your-username/https://github.com/4drian04/tlou-qa-finetuning.git
 cd tlou-qa-finetuning
 ```
 
-2. Instalar dependencias
+2. Install dependencies
 
 ```bash
 pip install transformers datasets peft trl bitsandbytes accelerate evaluate
 ```
 
-3. Ejecutar baseline
+3. Run baseline
 
 ```bash
-python Test_Modelo_Base.py
+python Test_Base_Model.py
 ```
 
-4. Entrenar modelo
+4. Train model
 
 ```bash
 python Fine-Tuning.py
 ```
 
-5. Hacer merge
+5. Merge
 
 ```bash
 python Merge_Models.py
 ```
 
-6. Evaluar modelo ajustado
+6. Evaluate fitted model
 
 ```bash
 python Test_FineTuning_Model.py
 ```
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Technologies Used
 
-- Transformers  
-- Datasets  
-- PEFT (LoRA)  
-- TRL (SFTTrainer)  
-- BitsAndBytes  
-- PyTorch  
-- TensorBoard  
+- Transformers
+- Datasets
+- PEFT (LoRA)
+- TRL (SFTTrainer)
+- BitsAndBytes
+- PyTorch
+- TensorBoard
 
 ---
 
 ## 📂 Dataset
 
-El dataset utilizado para el Fine-Tuning está disponible en Hugging Face:
+The dataset used for Fine-Tuning is available on Hugging Face:
 
 👉 https://huggingface.co/datasets/adriangg04/the-last-of-us-instruction-dataset
 
-Este dataset ha sido creado específicamente para este proyecto y contiene ejemplos en formato conversacional (system, user, assistant) centrados en el universo de *The Last of Us*.
+This dataset was created specifically for this project and contains conversational examples (system, user, assistant) focused on the universe of *The Last of Us*.
 
-Además, el dataset ha sido generado mediante técnicas de **web scraping** utilizando el script:
+Furthermore, the dataset was generated using web scraping techniques with the following script:
 
 ```bash
 scrappingTLOU.py
 ```
-Este script se encarga de recopilar información relevante del universo de *The Last of Us*, que posteriormente ha sido procesada y transformada al formato de instrucciones utilizado en el Fine-Tuning.
+This script collects relevant information from the universe of *The Last of Us*, which is then processed and transformed into the instruction format used in Fine-Tuning.
 
 ---
 
-## 🤖 Modelo Fine-Tuned
+## 🤖 Fine-Tuned Model
 
-El modelo ajustado está disponible en Hugging Face:
+The fine-tuned model is available on Hugging Face:
 
 👉 https://huggingface.co/adriangg04/TheLastOfUs-QA
 
-Este modelo es una versión fine-tuned de Qwen2.5-7B-Instruct, optimizada para responder preguntas sobre *The Last of Us*.
+This model is a fine-tuned version of Qwen2.5-7B-Instruct, optimized to answer questions about *The Last of Us*.
 
 ---
 
 ## 🚀 Demo (Hugging Face Space)
 
-Puedes probar el modelo directamente desde el siguiente Space:
+You can try the model directly from the following Space:
 
 👉 https://huggingface.co/spaces/adriangg04/Qwen-Finetuned-TheLastofUs
 
-Este Space permite interactuar con el modelo en tiempo real sin necesidad de instalación local.
+This Space allows you to interact with the model in real time without needing to install it locally.
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Adrián García García** - [LinkedIn](https://www.linkedin.com/in/adri%C3%A1n-garc%C3%ADa-garc%C3%ADa-6ab399333/)
 
 ---
 
-## ⭐ Contribuciones
+## ⭐ Contributions
 
-Si te interesa el proyecto, ¡no dudes en darle una estrella o contribuir!
+If you're interested in the project, feel free to give it a star or contribute!
