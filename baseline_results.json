@@ -1,0 +1,93 @@
+[
+    {
+        "test_id": "test_001",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What does Ellie find out when she returns to her house on The Last of Us?",
+        "response": "When Ellie returns to her house in The Last of Us, she finds it ransacked and her family's remains inside, which deeply affects her emotionally and drives her further into the story's conflict."
+    },
+    {
+        "test_id": "test_002",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "Why does Tommy go to Santa Barbara ahead of Ellie in The Last of Us?",
+        "response": "In The Last of Us, Tommy goes to Santa Barbara ahead of Ellie because he is trying to find a safe place for her and other survivors. Specifically, Tommy has information about a secure location in Santa Barbara that might offer them protection from the infected and other dangers they face. He travels there first to ensure the area is safe before bringing Ellie and the others."
+    },
+    {
+        "test_id": "test_003",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What happened in the event 'Ellie goes to Seattle' in The Last of Us?",
+        "response": "In \"The Last of Us,\" during the event \"Ellie goes to Seattle,\" Ellie travels to Seattle with Joel to deliver a package. However, they become separated when Ellie is taken by a group of survivors who believe she has valuable information about a cure for the fungal infection that has caused the zombie outbreak. Joel, believing Ellie dead, returns to Philadelphia. This event is significant as it sets up Ellie's journey to find Joel and her own path in the post-apocalyptic world."
+    },
+    {
+        "test_id": "test_004",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "Why does Joel kill Marlene in The Last of Us?",
+        "response": "In The Last of Us, Joel kills Marlene because she poses a significant threat to Ellie and his mission. Marlene discovers that Joel is hiding Ellie and attempts to take her by force. When Joel tries to reason with her, Marlene becomes violent and attacks Joel, putting Ellie in danger. To protect Ellie, Joel is forced to defend himself and ultimately kills Marlene. This action is a pivotal moment in the story, highlighting the harsh realities and moral dilemmas faced by survivors in the game's post-apocalyptic world."
+    },
+    {
+        "test_id": "test_005",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "How does the rat king differ from other infected in The Last of Us?",
+        "response": "In The Last of Us, the Rat King is a highly mutated and extremely aggressive variant of the infected rats that have been altered by the fungal infection. It differs from other infected in several key ways:\n\n1. **Size**: The Rat King is significantly larger than normal infected rats, often described as the size of a small dog.\n\n2. **Strength and Durability**: It possesses enhanced strength and durability, making it much harder to defeat compared to regular infected rats.\n\n3. **Aggression**: The Rat King exhibits an even more frenzied and relentless aggression towards humans, driven by the infection's influence.\n\n4. **Fungal Mutation**: It has undergone more extensive fungal mutation, which likely gives it unique abilities or traits not seen in other infected animals.\n\n5. **Role in the Story**: The Rat King plays a significant role in the narrative, serving as a formidable obstacle for the main characters and symbolizing the pervasive threat of the infection.\n\nThese characteristics make the Rat King a particularly dangerous and"
+    },
+    {
+        "test_id": "test_006",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "How do stalkers compare to runners in terms of strength in The Last of Us?",
+        "response": "In The Last of Us, stalkers and runners are both types of infected enemies, but they differ significantly in strength and behavior:\n\n1. **Runners**:\n   - Are slower and less aggressive.\n   - Have lower health and are easier to kill.\n   - Typically appear in groups and can be dispatched with fewer resources.\n\n2. **Stalkers**:\n   - Move much faster and are more aggressive.\n   - Have higher health compared to runners.\n   - Are harder to hit due to their speed and agility.\n   - Often appear alone or in smaller numbers, making them more challenging to take down.\n\nIn summary, stalkers are generally stronger and more difficult to defeat compared to runners."
+    },
+    {
+        "test_id": "test_007",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What is the main reason for Ellie's journey to Seattle in The Last of Us?",
+        "response": "In The Last of Us, Ellie travels to Seattle to find her father, who was last known to be in the area. Her journey is driven by a desire to reconnect with her father and learn more about her past, as well as to seek safety in a rumored safe haven."
+    },
+    {
+        "test_id": "test_008",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What happens to Sarah in Texas on The Last of Us?",
+        "response": "In \"The Last of Us,\" Sarah is initially introduced as a survivor who takes Joel and Ellie under her protection after they meet in Nebraska. When the trio reaches Texas, Sarah becomes more involved with Ellie, showing interest and concern for her well-being. However, Sarah's character does not survive the Texas portion of the game. She is killed by an infected zombie near the beginning of their journey through the state, which affects Joel and Ellie deeply. Her death is a significant moment in the story, highlighting the harsh realities of survival in a post-apocalyptic world."
+    },
+    {
+        "test_id": "test_009",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What happens to Sam after he is scratched by an infected in The Last of Us?",
+        "response": "After being scratched by an infected in The Last of Us, Sam is infected himself. His condition progressively worsens over time, leading to him becoming aggressive and dangerous. Joel ultimately has to make the difficult decision to put Sam down to prevent further harm to themselves and others."
+    },
+    {
+        "test_id": "test_010",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What happened to Ellie and Joel after they left the University on The Last of Us?",
+        "response": "After leaving the University, Ellie and Joel's journey becomes more perilous as they face increasing threats from infected and other survivors. They eventually part ways due to their different survival philosophies and Joel's deteriorating condition. Joel is later killed by an infected, and Ellie continues her journey alone, ultimately reaching Feros with Abby and meeting up with other survivors."
+    },
+{
+        "test_id": "test_011",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What is the relationship between Jerry and Abby in The Last of Us?",
+        "response": "In The Last of Us, Jerry and Abby are brother and sister. Jerry is a key character who helps Joel and Ellie early in their journey, and Abby is his young daughter."
+    },
+    {
+        "test_id": "test_012",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "How did Abby react to Owen's death in The Last of Us?",
+        "response": "In The Last of Us, Abby's reaction to Owen's death is deeply emotional and intense. She becomes extremely distraught, showing signs of grief and anger. Her relationship with Owen, who was like a father figure to her, makes her reaction particularly raw and personal. Abby is seen crying and expressing her sorrow, reflecting the strong bond she had with him."
+    },
+    {
+        "test_id": "test_013",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What motivated Abby to spare Ellie's life in The Last of Us?",
+        "response": "In The Last of Us, Abby spares Ellie's life primarily due to her own past experiences with abandonment and loss. Abby, who was taken from her home as a child, empathizes with Ellie's situation and recognizes the value of survival. This connection and shared trauma motivate Abby to protect Ellie, seeing in her a younger version of herself. Additionally, Ellie's intelligence and resourcefulness make her a valuable ally in their journey."
+    },
+    {
+        "test_id": "test_014",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "Why do Clickers develop a form of echolocation in The Last of Us?",
+        "response": "In The Last of Us, Clickers develop echolocation as a survival mechanism due to their blindness caused by the fungal infection. This adaptation allows them to navigate and hunt effectively in their dark, post-apocalyptic environment. Echolocation helps them detect and locate prey or threats through sound waves, enabling them to compensate for their visual impairment and remain formidable survivors."
+    },
+    {
+        "test_id": "test_015",
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "prompt": "What are the four categories of collectibles in The Last of Us?",
+        "response": "In The Last of Us, there are four main categories of collectibles:\n\n1. **Blueprints**: These provide insight into crafting recipes and can be found in various locations.\n2. **Notes**: These offer backstory and context to the game's world and characters.\n3. **Audio Logs**: These are recordings that provide additional narrative depth and character development.\n4. **Photographs**: These are historical images that add to the game’s lore and setting."
+    }
+
+]

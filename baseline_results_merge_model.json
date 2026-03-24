@@ -1,0 +1,93 @@
+[
+    {
+        "test_id": "test_001",
+        "model": "./qwen-merged",
+        "prompt": "What does Ellie find out when she returns to her house on The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat does Ellie find out when she returns to her house on The Last of Us?<|im_end|>\n<|im_start|>assistant\nEllie finds a note from her father, who is still alive and living in Jackson."
+    },
+    {
+        "test_id": "test_002",
+        "model": "./qwen-merged",
+        "prompt": "Why does Tommy go to Santa Barbara ahead of Ellie in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhy does Tommy go to Santa Barbara ahead of Ellie in The Last of Us?<|im_end|>\n<|im_start|>assistant\nTommy goes to Santa Barbara ahead of Ellie because he is trying to find Abby, who he believes is still alive."
+    },
+    {
+        "test_id": "test_003",
+        "model": "./qwen-merged",
+        "prompt": "What happened in the event 'Ellie goes to Seattle' in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat happened in the event 'Ellie goes to Seattle' in The Last of Us?<|im_end|>\n<|im_start|>assistant\nEllie travels to Seattle, Washington, where she seeks revenge against Abby."
+    },
+    {
+        "test_id": "test_004",
+        "model": "./qwen-merged",
+        "prompt": "Why does Joel kill Marlene in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhy does Joel kill Marlene in The Last of Us?<|im_end|>\n<|im_start|>assistant\nJoel kills Marlene because he believes she is trying to kill Ellie."
+    },
+    {
+        "test_id": "test_005",
+        "model": "./qwen-merged",
+        "prompt": "How does the rat king differ from other infected in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nHow does the rat king differ from other infected in The Last of Us?<|im_end|>\n<|im_start|>assistant\nThe rat king is a unique and rare type of infected that has been fused together by the Cordyceps fungus, making it stronger and more dangerous than other infected."
+    },
+    {
+        "test_id": "test_006",
+        "model": "./qwen-merged",
+        "prompt": "How do stalkers compare to runners in terms of strength in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nHow do stalkers compare to runners in terms of strength in The Last of Us?<|im_end|>\n<|im_start|>assistant\nStalkers have a significant strength advantage over runners, being able to easily overpower and kill them."
+    },
+    {
+        "test_id": "test_007",
+        "model": "./qwen-merged",
+        "prompt": "What is the main reason for Ellie's journey to Seattle in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat is the main reason for Ellie's journey to Seattle in The Last of Us?<|im_end|>\n<|im_start|>assistant\nEllie travels to Seattle to avenge Joel's death by killing Abby."
+    },
+    {
+        "test_id": "test_008",
+        "model": "./qwen-merged",
+        "prompt": "What happens to Sarah in Texas on The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat happens to Sarah in Texas on The Last of Us?<|im_end|>\n<|im_start|>assistant\nSarah is killed by a soldier while trying to escape from the WLF's control."
+    },
+    {
+        "test_id": "test_009",
+        "model": "./qwen-merged",
+        "prompt": "What happens to Sam after he is scratched by an infected in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat happens to Sam after he is scratched by an infected in The Last of Us?<|im_end|>\n<|im_start|>assistant\nSam is scratched by an infected and turns into a Runner, prompting Joel to kill him."
+    },
+    {
+        "test_id": "test_010",
+        "model": "./qwen-merged",
+        "prompt": "What happened to Ellie and Joel after they left the University on The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat happened to Ellie and Joel after they left the University on The Last of Us?<|im_end|>\n<|im_start|>assistant\nEllie and Joel traveled across the United States, eventually arriving in California."
+    },
+{
+        "test_id": "test_011",
+        "model": "./qwen-merged",
+        "prompt": "What is the relationship between Jerry and Abby in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat is the relationship between Jerry and Abby in The Last of Us?<|im_end|>\n<|im_start|>assistant\nJerry and Abby are father and daughter, with Jerry being a member of the Washington Liberation Front."
+    },
+    {
+        "test_id": "test_012",
+        "model": "./qwen-merged",
+        "prompt": "How did Abby react to Owen's death in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nHow did Abby react to Owen's death in The Last of Us?<|im_end|>\n<|im_start|>assistant\nAbby was devastated by Owen's death and blamed herself for his death, which led to her emotional breakdown."
+    },
+    {
+        "test_id": "test_013",
+        "model": "./qwen-merged",
+        "prompt": "What motivated Abby to spare Ellie's life in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat motivated Abby to spare Ellie's life in The Last of Us?<|im_end|>\n<|im_start|>assistant\nAbby spared Ellie's life because she was pregnant and Abby believed that killing Ellie would have been cruel."
+    },
+    {
+        "test_id": "test_014",
+        "model": "./qwen-merged",
+        "prompt": "Why do Clickers develop a form of echolocation in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhy do Clickers develop a form of echolocation in The Last of Us?<|im_end|>\n<|im_start|>assistant\nClickers develop a form of echolocation as a result of their blindness and the loss of their eyes. This adaptation allows them to navigate and hunt their prey effectively in dark environments."
+    },
+    {
+        "test_id": "test_015",
+        "model": "./qwen-merged",
+        "prompt": "What are the four categories of collectibles in The Last of Us?",
+        "response": "<|im_start|>system\nYou are an expert on The Last of Us<|im_end|>\n<|im_start|>user\nWhat are the four categories of collectibles in The Last of Us?<|im_end|>\n<|im_start|>assistant\nThe four categories of collectibles in The Last of Us are Artifacts, Training Manuals, Firefly Pendants, and Comics."
+    }
+
+]
