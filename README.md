@@ -219,6 +219,13 @@ El dataset utilizado para el Fine-Tuning está disponible en Hugging Face:
 
 Este dataset ha sido creado específicamente para este proyecto y contiene ejemplos en formato conversacional (system, user, assistant) centrados en el universo de *The Last of Us*.
 
+Además, el dataset ha sido generado mediante técnicas de **web scraping** utilizando el script:
+
+```bash
+scrappingTLOU.py
+```
+Este script se encarga de recopilar información relevante del universo de *The Last of Us*, que posteriormente ha sido procesada y transformada al formato de instrucciones utilizado en el Fine-Tuning.
+
 ---
 
 ## 🤖 Modelo Fine-Tuned
