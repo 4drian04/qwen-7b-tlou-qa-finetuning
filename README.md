@@ -131,14 +131,10 @@ The same test suite is run on the adjusted model:
 
 ## 📊 Results
 
-| Model | Correct Answers | Accuracy |
-
-|--------------------|----------|----------|
-
-| Base model | 5 / 15 | 33.3% |
-
-| Fine-Tuned model | 13 / 15 | 86.7% |
-
+| Model            | Correct Answers | Accuracy |
+|------------------|----------------|----------|
+| Base model       | 5 / 15         | 33.3%    |
+| Fine-Tuned model | 13 / 15        | 86.7%    |
 
 ---
 
