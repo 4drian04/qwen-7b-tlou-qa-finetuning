@@ -229,7 +229,15 @@ Furthermore, the dataset was generated using web scraping techniques with the fo
 ```bash
 scrappingTLOU.py
 ```
+
 This script collects relevant information from the universe of *The Last of Us*, which is then processed and transformed into the instruction format used in Fine-Tuning.
+In order to run the script, you need to have a local model installed, for this project I have used the [*Ollama*](https://ollama.com/download) platform to run local models.
+In this case, the llama3:instruct model has been used. To download it, use the following command:
+```bash
+ollama pull llama3:instruct
+```
+
+Once downloaded you could run the script 'scrappingTLOU.py'
 
 ---
 
